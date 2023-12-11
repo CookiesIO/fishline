@@ -8,6 +8,7 @@ function __flseg_exectime
     if [ $duration -ge 100 ]
 
         __fishline_segment $FLCLR_EXECTIME_BG $FLCLR_EXECTIME_FG
+        printf "$FLSYM_ICO_EXECTIME"
 
         set -l ms (math "$duration%1000")
         if [ $duration -gt 36000000 ]

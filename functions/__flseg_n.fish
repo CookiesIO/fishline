@@ -4,7 +4,9 @@
 function __flseg_n
 
     __fishline_segment_close
-    tput el
-    printf \n
+    if set -q FLINT_DID_RENDER
+        tput el
+        printf \n
+    end
 
 end
